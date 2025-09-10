@@ -1,0 +1,24 @@
+# ───────────────────────────────────────────────
+#   Property of CKS  © 2025
+#   Manifested by Freedom
+# ───────────────────────────────────────────────
+#
+# File: .gitignore
+#
+# Description: Ignore rules for Node/Vite/Tailwind project artifacts and local dev noise.
+# Function: Prevent committing build outputs, dependencies, logs, editor cruft.
+# Importance: Keeps repository clean and reduces merge conflicts / repo size.
+# Connects to: package.json (scripts), dist/ build output, node_modules/ dependencies.
+# Notes: Extend with tooling-specific ignores (e.g., coverage/, storybook-static/) as project grows.
+
+# Node
+node_modules
+dist
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# Editor
+.vscode
+.DS_Store

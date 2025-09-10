@@ -1,0 +1,30 @@
+{
+  "name": "upsessed-landing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fetch:images": "node scripts/fetch-images.mjs",
+    "build:images": "node scripts/optimize-images.mjs",
+    "setup:images": "npm run fetch:images && npm run build:images"
+  },
+  "dependencies": {
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.368.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.8",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "sharp": "^0.34.3",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}

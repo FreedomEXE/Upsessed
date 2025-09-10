@@ -1,0 +1,33 @@
+<!--
+───────────────────────────────────────────────
+  Property of CKS  © 2025
+  Manifested by Freedom
+───────────────────────────────────────────────
+
+File: index.html
+
+Description: Root HTML shell loaded by Vite.
+Function: Hosts mounting div for React root and bootstraps main.tsx.
+Importance: Defines document metadata and initial structure.
+Connects to: src/main.tsx, vite.config.ts, Tailwind (via generated CSS in JS bundle).
+Notes: Add SEO meta, Open Graph tags, analytics when moving toward production.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upsessed</title>
+    <link
+      rel="preload"
+      as="image"
+      href="/img/hero-1200.webp"
+      imagesrcset="/img/hero-768.webp 768w, /img/hero-1200.webp 1200w, /img/hero-1600.webp 1600w"
+      imagesizes="(max-width: 1024px) 90vw, 800px"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
